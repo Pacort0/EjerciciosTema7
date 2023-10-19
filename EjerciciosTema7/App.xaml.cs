@@ -1,4 +1,7 @@
-﻿namespace EjerciciosTema7.Views;
+﻿
+using EjerciciosTema7.Views;
+
+namespace EjerciciosTema7;
 
 public partial class App : Application
 {
@@ -6,6 +9,6 @@ public partial class App : Application
     {
         InitializeComponent();
 
-        MainPage = new PaginaTabbed();
+        MainPage = new NavigationPage(new MainPage());
     }
 }

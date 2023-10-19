@@ -6,4 +6,9 @@ public partial class pagina3 : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private async void btnPage3_Clicked(object sender, EventArgs e)
+    {
+		await Navigation.PopAsync();
+    }
 }

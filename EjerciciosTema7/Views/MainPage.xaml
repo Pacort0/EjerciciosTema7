@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjerciciosTema7.Views.MainPage"
+             Title="MainPage">
+    <VerticalStackLayout VerticalOptions="Center"
+                         HorizontalOptions="Center">
+        <Entry x:Name="entryNombre" Placeholder="Nombres"></Entry>
+        <Entry x:Name="entryApellidos" Placeholder="Apellidos"></Entry>
+        <Button x:Name="btnTabbed" Text="Tabbed Page" Clicked="btnTabbed_Clicked"></Button>
+        <Button x:Name="btnPage4" Text="Pagina 4" Clicked="btnPage4_Clicked"></Button>
+        <Button x:Name="btnPage5" Text="Pagina 5" Clicked="btnPage5_Clicked" ></Button>
+    </VerticalStackLayout>
+</ContentPage>

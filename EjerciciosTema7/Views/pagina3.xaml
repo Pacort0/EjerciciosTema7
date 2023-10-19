@@ -2,11 +2,13 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EjerciciosTema7.Views.pagina3"
-             Title="Pagina 3">
-    <VerticalStackLayout>
+             Title="Pagina 3"
+             IconImageSource="icono.jpg">
+    <VerticalStackLayout             
+        VerticalOptions="Center" 
+        HorizontalOptions="Center">
         <Label 
-            Text="Hola, soy la página 3"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            Text="pobrecito" />
+        <Button x:Name="btnPage3" Text="Volver a main page" Clicked="btnPage3_Clicked"></Button>
     </VerticalStackLayout>
 </ContentPage>
