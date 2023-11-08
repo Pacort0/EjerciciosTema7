@@ -49,8 +49,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\house_solid.svg" />
 	  <None Remove="Resources\Images\icono.jpg" />
+	  <None Remove="Resources\Images\image_regular.svg" />
 	  <None Remove="Resources\Images\png_icon.png" />
+	  <None Remove="Resources\Images\poo_solid.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -74,6 +77,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\MenuFlyout\FlyoutPageNavigation.xaml.cs">
+	    <DependentUpon>FlyoutPageNavigation.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\MenuFlyout\TodoListPage.xaml.cs">
+	    <DependentUpon>TodoListPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Views\PaginaTabbed.xaml.cs">
 	    <DependentUpon>PaginaTabbed.xaml</DependentUpon>
 	  </Compile>
@@ -87,6 +96,21 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="Views\MainPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\MenuFlyout\ContactsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\MenuFlyout\FlyoutMenuPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\MenuFlyout\FlyoutPageNavigation.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\MenuFlyout\ReminderPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\MenuFlyout\TodoListPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\pagina2.xaml">
